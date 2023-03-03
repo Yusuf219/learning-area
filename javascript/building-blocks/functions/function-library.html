@@ -28,6 +28,18 @@ function cubed(num) {
   return num * num * num;
 }
 
+function circumference(num) {
+  return (num * 2) * Math.PI
+}
+
+function sqrt(num) {
+  return Math.pow(num, 1/2)
+}
+
+function cbrt(num) {
+  return Math.pow(num, 1/3)
+}
+
 function factorial(num) {
   if (num < 0) return undefined;
   if (num === 0) return 1;
@@ -47,6 +59,9 @@ input.addEventListener("change", () => {
     para.textContent = `${num} squared is ${squared(num)}. `;
     para.textContent += `${num} cubed is ${cubed(num)}. `;
     para.textContent += `${num} factorial is ${factorial(num)}. `;
+    para.textContent += `${num} circumference is ${circumference(num)}. `;
+    para.textContent += `${num} square root is ${sqrt(num)}. `;
+    para.textContent +=  `${num} cube root is ${cbrt(num)}. `; 
   }
 });
 
